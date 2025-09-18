@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: hsl(204, 10%, 50%);
+        place-content: center;
+      }
+      .bottom {
+        background-color: hsl(179, 62%, 43%);
+        grid-column: 1/2;
+        grid-row: 2/3;
+        gap: 10px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr)
+       width:800px
+      }
+      .button {
+        background-color: hsl(71, 73%, 54%);
+      }
+      .top {
+        background-color: white;
+        grid-column: 1/3;
+
+      }
+      .right {
+        color: hsl(218, 22%, 67%);
+        background-color: hsl(179, 74%, 32%);
+        grid-column: 2/3;
+        grid-row: 2/3;
+        text-align: center;
+      }
+      .left{
+        color: hsl(204, 43%, 93%);
+        background-color: rgb(9, 84, 84);
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <h2 style="color: hsl(179, 62%, 43%)">Join our community</h2>
+        <h3 style="color: hsl(71, 73%, 54%)">
+          30-day, hassle-free money back guarantee
+        </h3>
+        <p style="color: hsl(218, 22%, 67%)">
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing their
+          skills.
+        </p>
+      </div>
+
+      <div class="left">
+        <h3 class="p-2">Monthly Subscription</h3>
+        <h1 class="dollar">&dollar;29</h1>
+        <p>per month</p>
+        <p>Full access for less than &dollar;1 a day</p>
+        <button class="button">Sign Up</button>
+      </div>
+      <div class="right">
+        <h3>Why Us</h3>
+        <span>
+          Tutorials by industry experts Peer &amp; expert code review Coding
+          exercises Access to our GitHub repos Community forum Flashcard decks
+          New videos every week</span
+        >
+      </div>
+    </div>
+  </body>
+</html>
